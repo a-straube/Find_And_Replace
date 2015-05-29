@@ -17,5 +17,12 @@ $(document).ready(function() {
     var sentence = $("input#sentence").val();
     var oldWord = $("input#oldword").val();
     var newWord = $("input#newword").val();
+    var result = findAndReplace(sentence, oldWord, newWord);
+
+    $(".result").text(result)
+
+    $("#result").show();
+
+    event.preventDefault();
   });
 });

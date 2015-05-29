@@ -1,0 +1,9 @@
+#result {
+  display: none;
+}
+
+.sentenceField {
+  width: 390px
+  ;height: 90px
+  ;boder: 1px solid
+}
