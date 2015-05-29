@@ -4,7 +4,7 @@ var findAndReplace = function(sentence, findWord, replacementWord) {
   var replacementWord = replacementWord;
 
   for (var index = 0; index < splitSentence.length; index += 1) {
-    if (splitSentence[index] === findWord) {
+    if (splitSentence[index].toLowerCase() === findWord.toLowerCase()) {
       splitSentence[index] = replacementWord;
     };
   };
