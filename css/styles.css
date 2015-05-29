@@ -1,9 +1,33 @@
 #result {
   display: none;
+  background: #FFFFCC;
+  border: 2px solid
 }
 
 .sentenceField {
-  width: 390px
-  ;height: 90px
-  ;boder: 1px solid
+  width: 500px
+  ;height: 50px
+  ;boder: 2px solid
+}
+
+.wordField {
+  border: 2px solid
+}
+
+body {
+  background: url(http://michcommunication.com/wp-content/uploads/2013/01/torn-words.jpg) no-repeat center center fixed;
+}
+
+.jumbotron {
+  position: relative;
+  background: #B2E6FF url("jumbotron-lg.png") center center;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  overflow: hidden;
+  background: rgb(200, 54, 54); /* This is for ie8 and below */
+  background: rgba(200, 54, 54, 0.5);
+  background: #B2E6FF;
+  font-family: "Courier New";
+  text-align: center;
 }

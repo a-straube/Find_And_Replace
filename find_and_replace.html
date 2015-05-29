@@ -8,17 +8,19 @@
     <title>Find And Replace</title>
   </head>
   <body>
+    <div class="jumbotron">
+      <h1><b>FIND AND REPLACE!</b></h1>
+    </div>
 
-    <h1><i>Find and Replace!</i></h1>
+    <div class="container">
 
     <form id="far">
     <div class="form-group">
-      <label for="sentence">Enter a sentence:</label>
-      <input name="sentence" id="sentence" type="text" class="sentenceField">
-      <p><input placeholder="Word to replace" name="oldword" id="oldword" type="text"></p>
-      <p><input placeholder="Word to take place of replaced word" name="newword" id="newword" type="text"></p>
+      <p><input placeholder="Enter a sentence"name="sentence" id="sentence" type="text" class="sentenceField"></p>
+      <p><input placeholder="Word to replace" name="oldword" id="oldword" type="text" class="wordField"></p>
+      <p><input placeholder="Replacement word" name="newword" id="newword" type="text" class="wordField"></p>
 
-      <p><button type="submit">Replace Word!</button></p>
+      <p><button type="submit" class="btn-success">Replace Word!</button></p>
     </div>
     </form>
 
@@ -26,5 +28,6 @@
       <span class="result"></span>
     </div>
 
+    </div>
   </body>
 </html>
