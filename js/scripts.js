@@ -4,7 +4,7 @@ var findAndReplace = function(sentence, findWord, replacementWord) {
   var replacementWord = replacementWord;
 
   for (var index = 0; index < splitSentence.length; index += 1) {
-    if (splitSentence[index].toLowerCase() === findWord.toLowerCase()) {
+    if (splitSentence[index].replace(/\W+/g, "").toLowerCase() === findWord.toLowerCase()) {
       splitSentence[index] = replacementWord;
     };
   };
@@ -21,7 +21,7 @@ $(document).ready(function() {
 
     $(".result").text(result)
 
-    $("#result").show();
+    $("#result").slideDown(300);
 
     event.preventDefault();
   });
